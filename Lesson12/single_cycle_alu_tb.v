@@ -76,7 +76,7 @@ module single_cycle_alu_tb;
         B = 8'd10;
         ALUControl = 3'b101;
         #10;
-
+cd
         // SLT false
         A = 8'd20;
         B = 8'd10;
