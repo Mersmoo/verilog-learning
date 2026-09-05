@@ -1,0 +1,11 @@
+| Instruction | RegWrite | ALUSrc | MemRead | MemWrite | Branch | Jump | ImmSrc | ALUOp  |
+| ----------- | -------: | -----: | ------: | -------: | -----: | ---: | ------ | ------ |
+| R-Type      |        1 |      0 |       0 |        0 |      0 |    0 | —      | R      |
+| ADDI        |        1 |      1 |       0 |        0 |      0 |    0 | I      | I      |
+| LW          |        1 |      1 |       1 |        0 |      0 |    0 | I      | ADD    |
+| SW          |        0 |      1 |       0 |        1 |      0 |    0 | S      | ADD    |
+| BEQ         |        0 |      0 |       0 |        0 |      1 |    0 | B      | BRANCH |
+| JAL         |        1 |      — |       0 |        0 |      0 |    1 | J      | —      |
+| JALR        |        1 |      1 |       0 |        0 |      0 |    1 | I      | ADD    |
+| LUI         |        1 |      1 |       0 |        0 |      0 |    0 | U      | —      |
+| AUIPC       |        1 |      1 |       0 |        0 |      0 |    0 | U      | ADD    |
